@@ -5,16 +5,20 @@
 # Product Microservice
 
 ## Dev
+
 1. Clonar el repositorio
 2. Instalar las dependencias
 3. Crear archivo `.env` basado en el `.env.template`
 4. Ejecutar migración de prisma `npx migrate dev` o `yarn migrate dev`
-5. Ejecutar `yarn start:dev` o `npm run start:dev`
+5. Levantar servidor de NATS `docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats`
+6. Ejecutar `yarn start:dev` o `npm run start:dev`
 
 ## Stack usado
+
 1. NestJS
 2. Prisma
 3. SQLite
 
 ## Builder
+
 1. swc
